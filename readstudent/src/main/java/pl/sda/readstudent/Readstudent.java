@@ -18,7 +18,8 @@ public class Readstudent {
 
         ObjectMapper mapper = new ObjectMapper();
         File file = new File("studentlist.json");
-        List<Student> studentslist = new ArrayList<Student>();
+        //albo - >List<Student> studentslist = new ArrayList<Student>();
+         List<Student> studentslist = null;
 
         System.out.println("------------------");
         try {
