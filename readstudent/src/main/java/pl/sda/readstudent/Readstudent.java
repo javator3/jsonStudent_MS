@@ -26,6 +26,7 @@ public class Readstudent {
             Student[] jsonstudentlist = mapper.readValue(file,Student[].class);
             //budujemy liste obiektow typu Student
             studentslist = Arrays.asList(jsonstudentlist);
+            //Arrays.stream(jsonstudentlist).forEach(sout) -- alternatywa
             System.out.println(" Printing students from json: ");
             for (Student s:studentslist
                  ) {System.out.println(s.getName() + " " + s.getLastname());
@@ -37,7 +38,8 @@ public class Readstudent {
 
         System.out.println("------------------");
         List<String> studentAlist = studentslist.stream()
-                .filter( f-> f.getName().contains("A"))
+                .filter( f-> f.getName().startsWith("A"))
+                //.contains("A")
                 .map(f-> f.getName() + " " + f.getLastname())
                 .collect(Collectors.toList());
 

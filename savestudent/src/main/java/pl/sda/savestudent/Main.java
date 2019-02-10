@@ -16,10 +16,14 @@ public class Main {
             new Student("Karol","Leszczyński",132123),
             new Student("Andrzej","Bogucki",132523),
             new Student("Karol","Kaczyśki",132193),
-            new Student("Adam","Bąk",132128),
-            new Student("Karol","Leszczyński",132113),
-            new Student("Borys","Dębki",132129),
-            new Student("Katarzyna","Dąbrowska",133521)
+              new Student("Adam","Bąk",132128),
+              new Student("Karol","Leszczyński",189113),
+              new Student("Borys","Dębki",132129),
+              new Student("Kamil","Kaczyśki",192193),
+              new Student("Wacek","Bąk",112128),
+              new Student("Asia","Leszczyński",174513),
+              new Student("Zbyszek","Dębki",132129),
+            new Student("Katarzyna","Dąbrowska",134521)
         );
 
         for (Student x:studentList) {
